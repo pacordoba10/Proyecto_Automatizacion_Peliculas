@@ -1,0 +1,14 @@
+{
+  "name": "proyecto_automatizacion_peliculas",
+  "version": "1.0.0",
+  "description": "Paula Cordoba Diaz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paula Cordoba Diaz",
+  "license": "ISC",
+  "devDependencies": {
+    "multiple-cucumber-html-reporter": "^1.16.2"
+  }
+}

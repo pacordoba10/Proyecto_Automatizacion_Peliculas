@@ -1,0 +1,210 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 26942361600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Inicio()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Ingresar a la pagina de contacto desde el Home",
+        "description": "",
+        "id": "validar-el-formulario-de-contactenos;ingresar-a-la-pagina-de-contacto-desde-el-home",
+        "after": [
+          {
+            "result": {
+              "duration": 1034179700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Final()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1745945300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "El usuario debe estar en el home de la pagina Maxipelis24",
+            "match": {
+              "arguments": [
+                {
+                  "val": "24",
+                  "offset": 55
+                }
+              ],
+              "location": "ValidarFormularioContacto.el_usuario_debe_estar_en_el_home_de_la_pagina_Maxipelis(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4086241800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Dar clic en el boton Contacto del footer de la pagina",
+            "match": {
+              "location": "ValidarFormularioContacto.dar_clic_en_el_boton_Contacto_del_footer_de_la_pagina()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 287104000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name\u003d\u0027your-name\u0027]\"}\n  (Session info: chrome\u003d81.0.4044.138)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.7.1\u0027, revision: \u00278a0099a\u0027, time: \u00272017-11-06T21:01:39.354Z\u0027\nSystem info: host: \u0027DESKTOP-A19AHKP\u0027, ip: \u0027192.168.1.60\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\\Users\\Visitor\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:38416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 1c199fd32e36db082197c5f8c72e31da\n*** Element info: {Using\u003dname, value\u003dyour-name}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:448)\r\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)\r\n\tat pom.BasePage.setFields(BasePage.java:63)\r\n\tat pom.PaginaContacto.DiligenciarFormulario(PaginaContacto.java:37)\r\n\tat Seleniumgluecode.ValidarFormularioContacto.diligenciar_los_campos_del_formulario_de_Contacto(ValidarFormularioContacto.java:30)\r\n\tat ✽.And Diligenciar los campos del formulario de Contacto(contacto.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "Diligenciar los campos del formulario de Contacto",
+            "match": {
+              "location": "ValidarFormularioContacto.diligenciar_los_campos_del_formulario_de_Contacto()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Dar clic en Enviar",
+            "match": {
+              "location": "ValidarFormularioContacto.dar_clic_en_Enviar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Se debe dirigir a la pagina de Contacto",
+            "match": {
+              "location": "ValidarFormularioContacto.se_debe_dirigir_a_la_pagina_de_Contacto()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Se conservara en la pagina de Contacto con un mensaje \"Gracias por tu mensaje. Ha sido enviado\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Gracias por tu mensaje. Ha sido enviado",
+                  "offset": 55
+                }
+              ],
+              "location": "ValidarFormularioContacto.se_conservara_en_la_pagina_de_Contacto_con_un_mensaje(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Validar el formulario de contactenos",
+    "description": "Como usuario quiero enviar un mensaje en el formulario de contactenos de la pagina",
+    "id": "validar-el-formulario-de-contactenos",
+    "keyword": "Feature",
+    "uri": "contacto.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18533115300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Inicio()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Ingresar a la pagina de estrenos desde el home",
+        "description": "",
+        "id": "ingresar-al-modulo-de-estrenos;ingresar-a-la-pagina-de-estrenos-desde-el-home",
+        "after": [
+          {
+            "result": {
+              "duration": 1169062100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.Final()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 97748600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "El usuario de estar en el home de la pagina Maxipelis24",
+            "match": {
+              "arguments": [
+                {
+                  "val": "24",
+                  "offset": 53
+                }
+              ],
+              "location": "ValidarEstrenos.el_usuario_de_estar_en_el_home_de_la_pagina_Maxipelis(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3521080299,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Dar clic en el boton estrenos",
+            "match": {
+              "location": "ValidarEstrenos.dar_clic_en_el_boton_estrenos()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 586591699,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Se debe dirigir a la pagina de estrenos",
+            "match": {
+              "location": "ValidarEstrenos.se_debe_dirigir_a_la_pagina_de_estrenos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Ingresar al modulo de estrenos",
+    "description": "      Como usuario quiero ingresar al modulo de estrenos para revisar cuales son las peliculas mas recientes",
+    "id": "ingresar-al-modulo-de-estrenos",
+    "keyword": "Feature",
+    "uri": "estrenos.feature"
+  }
+]
